@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+header {
+    background-color: rgb(143, 143, 143);
+    padding: 0px;
+}
+.container {
+    width: 70%;  
+    margin: auto;
+}
+.card {
+    background-color: rgb(181, 181, 181);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+footer {
+    background-color: rgb(181, 181, 181);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0;
+    p {
+        color: #ffffff;
+    }
+}
+nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.Logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 0 0 24px;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+    
+}
+.btn-primary:hover {
+    background-color: rgb(141, 139, 139);
+}
+.btn-primary {
+    color: rgb(0, 0, 0);
+    background-color: rgb(102, 102, 102);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+.btn-secondary:hover {
+    background-color: #e89339;
+}
+.btn-secondary {
+    color: rgb(0, 0, 0);
+    background-color: #eaa358;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+.manu ui li  :hover{
+    color: #6a6a6a;
+
+}
+.manu ui li  {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+}
+a .btn-primary:hover{
+    text-decoration: none;
+    color: #000000;
+
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+}
+.back-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eaa358;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.back-home:hover {
+    background-color: #916b43;
+}

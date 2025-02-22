@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image</title>
+  <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url('images/bg_christmas.webp');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .lef {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .center {
+        display: block;
+        margin: auto;
+      }
+      .b-image-contain {
+        width: 300px;
+        height: 100px;
+        border: 1px solid black;
+        object-fit: contain;
+      }
+      .b-image-fill {
+        width: 300px;
+        height: 100px;
+        border: 1px solid black;
+        object-fit: fill;
+      }
+      .b-image-cover {
+        width: 300px;
+        height: 100px;
+        border: 1px solid black;
+        object-fit: cover ;
+      }
+      .s-image-contain {
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        object-fit: contain;
+      }
+      .s-image-fill {
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        object-fit: fill;
+      }
+      .s-image-cover {
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        object-fit: cover ;
+      }
+      .gallery {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+   </style>
+</head>
+<body>
+    
+  <h1>My Favorite Photo</h1>
+ <img src="https://www.dd-productbkk.com/uploads/products/img/cover/l/57_p56.jpg" alt="A placeholder image" width="300">
+ <p>This is an image of my favorite form Woebsite.</p>
+ <img src="images/rabbit3.jpg" alt="กระต่าย" width="300">
+  <p>รูปภาพนี่เป็นภาพที่มาจากเครื่องคอมพิวเตอร์ของเรา</p>
+
+  <hr>
+
+  <h1>Click the Image : Link for Open new window</h1>
+  <a href="https://www.wikipedia.org/" target="_blank">
+    <img src="https://thumbs.dreamstime.com/z/pointing-himself-emoticon-both-hands-pick-me-56095340.jpg?ct=jpeg" alt="A clickable image" width="100">
+  </a>
+
+  <hr>
+
+  <h1>Image Alignment</h1>
+  <p><img src="https://www.rspg.or.th/homklindokmai/queen_flora/q20.jpg" alt="Left aligned image" class="left">This image is aligned to the left.</p>
+  <p><img src="https://f.ptcdn.info/150/006/000/1371092387-elenyeager-o.jpg" alt="Right aligned image" class="right">This image is aligned to the right.</p>
+  <p><img src="https://cdn.prod.website-files.com/6342c9e4456e3894df6e7d41/6409a9a47fd40528ddf1216e_peppa-pig-300x300.png" alt="Center aligned image" class="center">This image is centered.</p>
+
+  <hr>
+
+  <h1>Object-Fit: Image Bigger than Container (300x100)</h1>
+  <div>
+    <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-contain">
+    <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+    <br>
+  </div>
+  <div>
+    <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-fill">
+    <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+    <br>
+  </div>
+  <div>
+    <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-cover">
+    <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+    <br>
+  </div>
+
+
+  <hr>
+
+  <h1>Object-Fit: Image Smaller than Container</h1>
+  <div>
+    <img src="https://www.lookbook.in.th/wp-content/uploads/2015/01/649cf99ea69eded2bfffc7346cafc588.jpg" alt="Sample Image" class="s-image-fill">
+    <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+  </div>
+
+  <div>
+    <img src="https://www.lookbook.in.th/wp-content/uploads/2015/01/649cf99ea69eded2bfffc7346cafc588.jpg" alt="Sample Image" class="s-image-contain">
+    <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+  </div>
+
+  <div>
+    <img src="https://www.lookbook.in.th/wp-content/uploads/2015/01/649cf99ea69eded2bfffc7346cafc588.jpg" alt="Sample Image" class="s-image-cover">
+    <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+  </div>
+
+
+  <hr>
+
+
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="https://www.lookbook.in.th/wp-content/uploads/2015/01/Chunky-Mario.jpg" alt="Image 1" height="100">
+    <img src="https://www.lookbook.in.th/wp-content/uploads/2015/01/Chunky-Mario.jpg" alt="Image 2" height="50">
+    <img src="https://www.lookbook.in.th/wp-content/uploads/2015/01/Chunky-Mario.jpg" alt="Image 3" height="150">
+    <img src="https://www.lookbook.in.th/wp-content/uploads/2015/01/Chunky-Mario.jpg" alt="Image 4" height="30">
+  </div>
+
+  <hr>
+
+
+  <h1>FlexBox: </h1>
+  <div class="ex-flex">
+    <img src="images/flex.jpg" alt="Image 1">
+    <br>
+  </div>
+
+  <hr>
+  <h1>FlexBox: justify-content</h1>
+  <div class="ex-flex">
+    <img src="images/justify-content.jpg" alt="Image 1">
+    <br>
+  </div>
+  
+  <hr>
+
+
+  <div class="back-to-home">
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>

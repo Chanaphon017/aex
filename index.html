@@ -68,7 +68,9 @@
     <li><a href="#Tables">Creating Tables</a></li>
     <li><a href="#Forms">HTML Forms</a></li>
     <li><a href="#Multimedia">Embedding Multimedia (Audio & Video)</a></li>
-    <li><a href="#Semantic">Semantic HTML</a></li>
+    <li><a href="#Semantic"></a></li>
+    <li><a href="#workshop">workshop</a></li>
+
   </ul>
    
   <hr>
@@ -114,7 +116,7 @@
 
   <hr>
   <h2 id="Heading">Heading</h2>
-  <p><a href="W2.sss.html">workshop</a></p>
+  <p><a href="W3_01_heading.html">workshop</a></p>
   <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags...</p>
   <pre>
     - &lt;h1&gt;: Heading 1
@@ -128,7 +130,7 @@
 
   <hr>
   <h2 id="Paragraph">Paragraph</h2>
-  <p>workshop</p>
+  <p><a href="w04_01_Paragraph.html">workshop</a></p>
   <p>HTML paragraphs are defined with the &lt;p&gt; tag...</p>
   <pre>
     - &lt;p&gt;: Paragraph
@@ -137,7 +139,7 @@
   <a href="index.html">Top</a>
   <hr>
   <h2 id="text-Formatting">Text Formatting</h2>
-  <p>workshop</p>
+  <p> <a href="W04_02_formatting.html">workshop</a></p>
   <p>HTML provides various elements to format text...</p>
   <pre>
     - &lt;h1&gt; to &lt;h6&gt;: Headings
@@ -175,7 +177,7 @@
 
   <hr>
   <h2 id="Links">Creating Links</h2>
-  <p>workshop</p>
+  <p> <a href="W04_03_links.html">workshop</a></p>
   <p>HTML links are defined with the &lt;a&gt; tag...</p>
   <pre>
     - &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
@@ -207,7 +209,7 @@
 
   <hr>
   <h2 id="Lists">Lists (Ordered and Unordered)</h2>
-  <p>workshop</p>
+  <p><a href="W04_04_list.html">workshop</a> </p>
   <p>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...</p>
   <pre>
     - &lt;ul&gt;: Unordered list
@@ -258,7 +260,7 @@
 
   <hr>
   <h2 id="Addings">Adding Images</h2>
-  <p>workshop</p>
+  <p> <a href="W06_01_image.html">workshop</a></p>
   <p>HTML images are defined with the &lt;img&gt; tag...</p>
   <pre>
     - &lt;img src="url" alt="description"&gt;
@@ -311,6 +313,8 @@
 
   <hr>
   <h2 id="Tables">Creating Tables</h2>
+  <a href="W08_01_tanle.html">workshop1</a>
+  <a href="W08_02_tanie-layout.html">workshop2</a>
   <p>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...</p>
   <pre>
     - &lt;table&gt;: Table
@@ -323,13 +327,56 @@
   <hr>
   <h2 id="Forms">HTML Forms</h2>
   <p>HTML forms are defined with the &lt;form&gt; tag...</p>
+  <h2 id="forms">HTML Forms</h2>
+  <p>HTML forms are defined with the &lt;form&gt; tag...</p>
   <pre>
-    - &lt;form&gt;: Form
-    - &lt;input&gt;: Input field
-    - &lt;textarea&gt;: Text area
-    - &lt;button&gt;: Button
-    - &lt;select&gt;: Dropdown list
-    - &lt;option&gt;: Option in a dropdown list
+    หัวข้อเกี่ยวกับฟอร์ม
+
+    1. โครงสร้างพื้นฐานของฟอร์ม
+
+       - &lt;form>: ใช้เป็นตัวครอบข้อมูลในฟอร์ม
+       - action และ method (GET/POST): การกำหนดปลายทางและวิธีส่งข้อมูล
+
+    2. ชนิดของอินพุต (Input Types)
+
+       - &lt;input>: ชนิดต่าง ๆ เช่น text, password, email, number, 
+                              radio, checkbox, date, file
+       - &lt;textarea>: ช่องข้อความขนาดใหญ่
+       - &lt;select> และ  &lt;option>: เมนูแบบเลื่อนลง  
+
+       - &lt;datalist>: รายการตัวเลือกที่กำหนดไว้ล่วงหน้า
+       - &lt;optgroup>: กลุ่มตัวเลือก
+
+       - &lt;fieldset> และ &lt;legend>: กลุ่มข้อมูลที่เกี่ยวข้อง
+
+
+    3. ปุ่มในฟอร์ม
+
+       - &lt;button>: ปุ่มทั่วไป
+       - &lt;input type="submit"> และ &lt;input type="reset">: ปุ่มส่งและล้างข้อมูล
+       - &lt;input type="button">: ปุ่มทั่วไป
+       - &lt;input type="image">: ปุ่มรูปภาพ
+       - &lt;input type="file">: ปุ่มอัพโหลดไฟล์
+
+    4. การจัดการป้ายกำกับ (Labels)
+
+       - &lt;label>: เพื่อเชื่อมกับ &lt;input> (ช่วยเพิ่มการเข้าถึง)
+       - for: ระบุ id ของอินพุตที่เกี่ยวข้อง
+
+    5. การตรวจสอบข้อมูล (Validation)
+
+       - คุณสมบัติ เช่น required, min, max, pattern
+       - การใช้ JavaScript เพื่อทำการตรวจสอบ
+
+    6. ฟอร์มแบบสมัยใหม่ (HTML5)
+
+       - placeholder: ตัวอย่างข้อความในช่องอินพุต
+       - autofocus: ให้ฟอร์มเริ่มต้นโฟกัส
+
+    7. การส่งฟอร์ม (Form Submission)
+
+       - การส่งข้อมูลไปยังเซิร์ฟเวอร์
+       - การใช้ JavaScript (เช่น onsubmit)
   </pre>
   <a href="index.html">Top</a>
 
@@ -340,6 +387,20 @@
     - &lt;audio&gt;: Audio player
     - &lt;video&gt;: Video player
   </pre>
+  <a href="index.html">Top</a>
+
+  <hr>
+  <h2 id="workshop">wy workshop</h2>
+  <ul>
+    <li> <a href="W06_02_rabbit.html">workshop 01 :rabbit</a></li>
+    <li> <a href="">workshop 02 : resume</a></li>
+    <li> <a href="HW08_01_TableLayout.html">workshop 03 :web stussy</a> </li>
+    <li> <a href="W09_01_form.html">workshop 04 :Form</a> </li>
+    <li> <a href="W09_02_form-register.html">workshop 05 :Form Register</a> </li>
+    <li> <a href="W10_01_Login.html">workshop 06 :Login</a></li>
+    <li><a href="W13_01_webResponsive.html">webResponsive</a></li>
+  </ul>
+
   <a href="index.html">Top</a>
 
   <hr>
@@ -354,8 +415,8 @@
     - &lt;footer&gt;: Defines a footer for a document or section
 </pre>
   <a href="index.html">Top</a>
-
   <hr>
+
   <a href="https://www.w3schools.com/">Learn more about HTML</a>
  </div>
   <footer>
